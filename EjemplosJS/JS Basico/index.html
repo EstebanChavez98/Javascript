@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--<script src="javascript.js"></script>-->
+</head>
+<body>
+    <h1>Hola soy un documento en HTML</h1>
+    <!--<script src="javascript.js"></script>-->
+    <script>
+        alert('Hola Nuevamente');
+        //Variables
+        var numero = 5;
+        alert(numero); //<-- Llamando una variable a la alerta
+
+        var numeroDos = 10;
+        alert(numeroDos);
+        alert(numero + numeroDos); //<-- Sumando numeros
+
+        var caracter = '5'
+        alert(caracter +numeroDos) //<-- Concatenando
+
+        var caracteres = 'soy un texto';
+        alert(caracteres);
+
+        numero = 6;
+        alert(numero); //<--Sobreescribiendo variables
+
+        const numeroCons = 20;
+        alert(numeroCons); //<--Constante, no se sobreescrribe
+
+        console.log(numero); //<--Llamando a la consola a numero
+
+        numero = numero + 1; //Incrementando
+        console.log(numero); //6
+        numero++; //Incrementando de otra manera
+        console.log(numero); //7
+        numero--; //Decrementando
+        console.log(numero); //6
+
+        if(numero > 5){ //Si es verdadero, se cumple lo que se escriba dentro de las llaves
+            console.log('Verdadero');
+        }else{ //En caso contrario, se cumple lo que este despues del else
+            console.log('Falso');
+        }
+
+        var nombre = 'Ignacio';
+        // Si usamos '||' en un if con dos condiciones significa que una de las dos condiciones tiene que ser verdadera
+        // Si usamos '&&' significa que ambas condiciones deben ser verdaderas
+        /*
+        ||                              &&
+        Con1    Con2    Resultado       Con1    Con2    Resultado
+        1       1       1               1       1       1
+        0       1       1               1       0       0
+        1       0       1               0       1       0
+        0       0       0               0       0       0
+        */
+
+        if(numero > 5 || nombre=='Ignacio'){
+            console.log('Verdadero');
+        }else{
+            console.log('Falso');
+        }
+        //Se pueden evaluar los valores booleanos
+        //Usando el signo '!' es evaluar si es lo contrario de la sentencia escrita
+        var bool = true;
+        if(bool){
+            console.log('Verdadero');
+        }else{
+            console.log('Falso');
+        }
+
+        //Array o Arreglos
+        var arreglo = [1,5,10,'Esteban',true];
+        console.log(arreglo); //Array [1,5,10,'Esteban',true]
+        console.log(arreglo[3]); //Desplegar el arreglo en el indice 3
+
+        for(var i = 0; i < arreglo.length; i++){ //Ciclo
+            console.log(arreglo[i]);
+        }
+        //While
+        var i = 0;
+        while(i < 15){
+            console.log(i);
+            i++;
+        }
+        i = 0;
+        do{
+            console.log(i);
+            i++;
+        }while(i<15);
+        //While: Mientras se cumpla la condicion, se realizaran las acciones encerradas
+        //Do while: Se realizaran las acioens encerradas una vez, y si se cumple condicion, repetra
+
+        //Switch
+        var hora = 15;
+        switch(hora){
+            case 10:
+                console.log('Son las 10 de la manana');
+                break;
+            case 15:
+                console.log('Son las 15 de la tarde');
+                break;
+            default:
+                console.log('No tengo saludo a esa hora');
+                break;
+        }
+
+
+        //Funciones
+        var num1 = 10;
+        var num2 = 15;
+        function suma(){
+            return console.log(num1+num2);
+        }
+        suma(); //Ejecutando la funcion
+
+        function suma2(num1, num2){
+            return console.log(num1 + num2);
+        }
+        suma(10,63) //Ejecutando funcion con parametros
+
+        
+    </script>
+</body>
+</html>
