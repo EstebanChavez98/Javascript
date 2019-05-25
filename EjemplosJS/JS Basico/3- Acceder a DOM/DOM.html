@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1 id=titulo>Hola soy un documento en HTML</h1>
+        <p id="parrafo" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quibusdam itaque consequatur cupiditate autem error mollitia dignissimos, ipsam excepturi possimus modi? Ullam officiis, temporibus inventore quia exercitationem obcaecati vero accusamus.</p>
+        <p id="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quibusdam itaque consequatur cupiditate autem error mollitia dignissimos, ipsam excepturi possimus modi? Ullam officiis, temporibus inventore quia exercitationem obcaecati vero accusamus.</p>
+
+        <button id="boton" class="btn btn-info">Cambiar</button>
+    </div>
+    <script>//Separar los scripts js en archivos separados, esto se hizo solo por temas pedagogicos
+        var h1 = document.getElementById("titulo");
+        console.log(h1.innerHTML);
+
+        h1.innerHTML = "A un nuevo texto"; //Asignar un nuevo texto
+        h1.style.color = 'red'; //Cambiar el color
+        h1.style.background = 'blue'; //Cambiar el color de fondo
+
+        var parrafo = document.getElementById("parrafo"); 
+
+        var boton = document.getElementById("boton");
+        function cambiar(){
+            parrafo.style.color = "olive";
+        }
+        boton.onclick = cambiar();
+
+        var parrafo2 = document.getElementsByClassName('lead');
+        console.log(parrafo2);
+
+        //Otra manera de como acceder a elementos del DOM
+        var parrafo3 = document.querySelector('p'); //Nos regresa el primero
+        console.log(parrafo3);
+
+        var parrafo3 = document.querySelectorAll('p'); //Nos regresa todos en un arreglo
+        console.log(parrafo3);
+
+        //Usaremos el boton
+        boton.addEventListener('click', function(){
+            console.log('Has dado el click');
+        })
+        boton.addEventListener('mouseover', function(){
+            console.log('He detectado el raton');
+        })
+        boton.addEventListener('mouseout', function(){
+            console.log('Adios Raton');
+        })
+    </script>
+</body>
+</html>
