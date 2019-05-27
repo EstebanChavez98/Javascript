@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "nombre": "Esteban",
+        "email": "esteban@chavez.mx",
+        "estado": true
+    },
+    {
+        "id": 2,
+        "nombre": "Antonio",
+        "email": "anton@chavez.mx",
+        "estado": true
+    },
+    {
+        "id": 3,
+        "nombre": "Jose",
+        "email": "jose@chavez.mx",
+        "estado": true
+    },
+    {
+        "id": 4,
+        "nombre": "Olga",
+        "email": "lili@chavez.mx",
+        "estado": true
+    }
+]
