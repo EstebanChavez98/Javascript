@@ -9,7 +9,7 @@
         "id": 2,
         "nombre": "Antonio",
         "email": "anton@chavez.mx",
-        "estado": true
+        "estado": false
     },
     {
         "id": 3,
