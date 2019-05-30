@@ -32,4 +32,4 @@ const peliculaDos = new Pelicula('Spider', 2)
 const serieUno = new Serie('Dexter', 3, 55)
 console.log(peliculaUno.reproducir());
 console.log(peliculaDos.reproducir());
-console.log(serieUno.reproducirCapitulo())
+console.log(serieUno.reproducirCapitulo());
